@@ -1,11 +1,18 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { ActivityIndicator, Button, StyleSheet, Text, View } from "react-native";
 
 const App = () => {
   return (
     <View style={styles.container}>
       <Text>Hello shivam</Text>
       <StatusBar style="auto" />
+      <ActivityIndicator size="large" color="#3d3ab0" />
+      <Button
+        onPress={() => alert("Button Pressed")}
+        title="Learn More"
+        color="#841584"
+        accessibilityLabel="Learn more about this purple button"
+      />
     </View>
   );
 };
